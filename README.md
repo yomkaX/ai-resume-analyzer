@@ -1,73 +1,115 @@
 # 🚀 AI Resume Analyzer
 
-A smart web application that analyzes resumes and compares them with job descriptions to generate ATS scores, skill match percentage, and improvement suggestions.
+A smart **AI-powered web application** that evaluates resumes against job descriptions to generate **ATS scores, skill match insights, and personalized improvement suggestions**.
 
 ---
 
-## 🎯 Features
+## 🎯 Key Features
 
-- Upload Resume (PDF)
-- Extract and preview resume content
-- Skill extraction from resume
-- Job description matching
-- ATS Score calculation
-- Missing skills detection
-- Interactive charts and visual insights
+* 📄 Upload and parse resumes (PDF format)
+* 🔍 Extract and preview resume content
+* 🧠 Intelligent skill extraction
+* 🎯 Job description matching
+* 📊 ATS score calculation
+* ❌ Missing skills identification
+* 📈 Interactive charts and visual insights
+* 💡 Actionable suggestions for improvement
 
 ---
 
 ## 🛠️ Tech Stack
 
-- Python  
-- Streamlit  
-- Pandas  
-- PyPDF2  
+* **Language:** Python
+* **Framework:** Streamlit
+* **Libraries:** Pandas, PyPDF2
 
 ---
 
 ## ⚙️ How It Works
 
-1. Upload your resume (PDF)  
-2. Paste a job description  
-3. Click Analyze Resume  
+1. Upload your resume (PDF)
+2. Paste a job description
+3. Click **Analyze Resume**
 4. Get:
-   - Skill Match %
-   - ATS Score
-   - Missing Skills
-   - Charts
+
+   * ✅ Skill Match Percentage
+   * 📊 ATS Score
+   * ❌ Missing Skills
+   * 📈 Charts & Insights
+   * 💡 Suggestions
 
 ---
-⚙️ Installation Steps
-Follow these steps to set up and run the AI Resume Analyzer locally:
 
-Make sure you have Python and Git installed.
+## 💻 Installation & Setup
 
-1️⃣ Clone the Repository
-git clone https://github.com/Altoks-AI/AI-Resume-Analyzer.git
-cd FolderName
-2️⃣ Set Up a Virtual Environment
+### 1️⃣ Clone the Repository
+
+git clone https://github.com/yomkaX/ai-resume-analyzer.git
+cd ai-resume-analyzer
+
+---
+
+### 2️⃣ Create Virtual Environment
+
 python -m venv myenv
-./myenv/Scripts/activate
-3️⃣ Install Dependencies
-Make sure you have pip updated, then install all required packages:
 
+#### Activate:
+
+Windows:
+myenv\Scripts\activate
+
+Mac/Linux:
+source myenv/bin/activate
+
+---
+
+### 3️⃣ Install Dependencies
+
+pip install --upgrade pip
 pip install -r requirements.txt
-4️⃣ Set Up Your .env File
-Create a .env file in the root directory and add your Groq API key from Groq
 
-GROQ_API_KEY=your_groq_api_key_here
-5️⃣ Run the Streamlit App
-Launch the app locally using Streamlit:
+---
+
+### 4️⃣ Setup Environment Variables
+
+Create a `.env` file and add:
+
+GROQ_API_KEY=your_api_key_here
+
+---
+
+### 5️⃣ Run the App
 
 streamlit run main.py
-6️⃣ Open in Browser
-Once the app starts, it will automatically open in your default web browser at:
+
+---
+
+### 6️⃣ Open in Browser
 
 http://localhost:8501
-✅ Now you’re all set! Upload a resume, paste a job description, and let the AI analyze your resume for job-fit and provide suggestions.
 
-Possible Changes you may want to make:
-Change the prompt in main.py file to get the results in the way you want.
-Embedding Model is "sentence-transformers/all-mpnet-base-v2" ,Change to the model you desire (Ex: BERT, SBERT,etc)
-Currently using Groq API and LLM model is "llama-3.3-70b-versatile", Change is model is removed or use other API's like OpenAI-GPT-4o model.
-Change the Title, Labels and other names and display formats according to your liking.
+---
+
+## ⚡ Customization
+
+* Modify prompts in `main.py`
+* Change embedding model (BERT / SBERT)
+* Switch LLM (Groq / OpenAI)
+* Update UI labels and layout
+
+---
+
+## 🚀 Future Improvements
+
+* LinkedIn profile analysis
+* AI resume rewriting
+* Cover letter generator
+* Multi-job comparison
+* Advanced NLP scoring
+
+---
+
+## 🏁 Conclusion
+
+This project demonstrates how **AI + NLP + Web Development** can be combined to build a practical tool that helps users **optimize resumes for better job opportunities**.
+
